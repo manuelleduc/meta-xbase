@@ -1,0 +1,13 @@
+grammar fr.mleduc.xtext.xbase.specialized.XbaseSpecialized with org.eclipse.xtext.xbase.Xbase
+
+generate xbaseSpecialized "http://www.mleduc.fr/xtext/xbase/specialized/XbaseSpecialized"
+import "http://www.eclipse.org/xtext/xbase/Xbase"
+
+Model returns XBlockExpression:
+	{Model}
+	expressions+=XExpressionOrVarDeclaration*;
+
+@Override
+XExpression:
+	super |
+	{Down} 'down' expression=XExpression;

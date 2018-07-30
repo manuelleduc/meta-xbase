@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: fr.mleduc.xtext.xbase.specialized.tests
+Bundle-ManifestVersion: 2
+Bundle-Name: fr.mleduc.xtext.xbase.specialized.tests
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: fr.mleduc.xtext.xbase.specialized.tests; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: fr.mleduc.xtext.xbase.specialized,
+ org.junit;bundle-version="4.12.0",
+ org.eclipse.xtext.testing,
+ org.eclipse.xtext.xbase.testing,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.objectweb.asm;bundle-version="[6.1.1,6.2.0)";resolution:=optional
+Bundle-RequiredExecutionEnvironment: JavaSE-10
+Export-Package: fr.mleduc.xtext.xbase.specialized.tests;x-internal=true
+

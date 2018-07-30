@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+	<extension point="org.eclipse.emf.ecore.generated_package">
+		<package 
+			uri = "http://www.mleduc.fr/xtext/xbase/specialized/XbaseSpecialized"
+			class = "fr.mleduc.xtext.xbase.specialized.xbaseSpecialized.XbaseSpecializedPackage"
+			genModel = "model/generated/XbaseSpecialized.genmodel" />
+	</extension>
+</plugin>

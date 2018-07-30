@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: fr.mleduc.xtext.xbase.specialized.ui
+Bundle-ManifestVersion: 2
+Bundle-Name: fr.mleduc.xtext.xbase.specialized.ui
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: fr.mleduc.xtext.xbase.specialized.ui; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: fr.mleduc.xtext.xbase.specialized,
+ fr.mleduc.xtext.xbase.specialized.ide,
+ org.eclipse.xtext.ui,
+ org.eclipse.xtext.ui.shared,
+ org.eclipse.xtext.ui.codetemplates.ui,
+ org.eclipse.ui.editors;bundle-version="3.5.0",
+ org.eclipse.ui.ide;bundle-version="3.5.0",
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.common.types.ui,
+ org.eclipse.ui,
+ org.eclipse.xtext.xbase.ui,
+ org.eclipse.compare,
+ org.eclipse.xtext.builder,
+ org.eclipse.xtend.lib;resolution:=optional,
+ org.eclipse.jdt.debug.ui
+Import-Package: org.apache.log4j
+Bundle-RequiredExecutionEnvironment: JavaSE-10
+Export-Package: fr.mleduc.xtext.xbase.specialized.ui.editor,
+ fr.mleduc.xtext.xbase.specialized.ui.internal,
+ fr.mleduc.xtext.xbase.specialized.ui.quickfix,
+ fr.mleduc.xtext.xbase.specialized.ui.contentassist
+Bundle-Activator: fr.mleduc.xtext.xbase.specialized.ui.internal.SpecializedActivator
